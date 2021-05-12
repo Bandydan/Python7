@@ -57,14 +57,14 @@ select * from vocabulary;
 ### Multiple insert
 
 ```sql
-test=# insert into vocabulary (name) values ('IT'), ('Silicon Valley season 1');
+insert into vocabulary (name) values ('IT'), ('Silicon Valley season 1');
 INSERT 0 2
 ```
 
 Проверим:
 
 ```sql
-test=# select * from vocabulary;
+select * from vocabulary;
  id |          name           | info
 ----+-------------------------+------
   1 | verbs                   |
